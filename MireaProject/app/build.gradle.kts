@@ -3,13 +3,15 @@ plugins {
 }
 
 android {
-    namespace = "ru.mirea.milonov.notificationapp"
+    namespace = "ru.mirea.milonov.mireaproject"
     compileSdk {
-        version = release(36)
+        version = release(36) {
+            minorApiLevel = 1
+        }
     }
 
     defaultConfig {
-        applicationId = "ru.mirea.milonov.notificationapp"
+        applicationId = "ru.mirea.milonov.mireaproject"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -31,13 +33,20 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
-    implementation("androidx.core:core:1.12.0")
     implementation(libs.appcompat)
+    implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation("com.google.android.material:material:1.12.0")
+    implementation(libs.navigation.fragment.ktx)
+    implementation(libs.navigation.ui.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

@@ -58,8 +58,11 @@ public class MainActivity extends AppCompatActivity {
                         .bigText("Much longer text that cannot fit one line..."))
                 .setContentTitle("Mirea");
         int importance = NotificationManager.IMPORTANCE_DEFAULT;
-        NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "Student FIO Notification", importance);
-        channel.setDescription("MIREA Channel");
+        NotificationChannel channel = null;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            channel = new NotificationChannel(CHANNEL_ID, "Student FIO Notification", importance);
+            channel.setDescription("MIREA Channel");
+        }
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
         notificationManager.createNotificationChannel(channel);
         notificationManager.notify(1, builder.build());
