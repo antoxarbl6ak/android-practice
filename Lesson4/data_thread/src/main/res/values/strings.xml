@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">data_thread</string>
+    <string name="tvthreaduiupdateinfo">
+        runOnUiThread - используется внутри активности,\n
+        выполняется вне очереди, если находится внутри UI потока\n
+        добавляется в очередь, если находится в фоне.\n
+        post - добавляется в конец очереди сообщений\n
+        можно вызвать у любого View\n
+        postDelayed - работает как post, но отложенный по времениможно отменить\n
+        потоки выполнятся в порядке runn 1, 2, 3
+        </string>
+</resources>

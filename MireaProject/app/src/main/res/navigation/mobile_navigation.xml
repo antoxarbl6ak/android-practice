@@ -15,4 +15,9 @@
         android:name="ru.mirea.milonov.mireaproject.WebViewFragment"
         android:label="fragment_web_view"
         tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/mediaPlayerFragment"
+        android:name="ru.mirea.milonov.mireaproject.MediaPlayerFragment"
+        android:label="fragment_media_player"
+        tools:layout="@layout/fragment_media_player" />
 </navigation>

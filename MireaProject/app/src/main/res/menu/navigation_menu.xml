@@ -11,4 +11,8 @@
         android:id="@+id/webViewFragment"
         android:title="Browser" />
 
+    <item
+        android:id="@+id/mediaPlayerFragment"
+        android:title="Media player" />
+
 </menu>
