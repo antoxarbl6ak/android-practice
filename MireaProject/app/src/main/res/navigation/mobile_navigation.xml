@@ -20,4 +20,19 @@
         android:name="ru.mirea.milonov.mireaproject.MediaPlayerFragment"
         android:label="fragment_media_player"
         tools:layout="@layout/fragment_media_player" />
+    <fragment
+        android:id="@+id/compassFragment"
+        android:name="ru.mirea.milonov.mireaproject.CompassFragment"
+        android:label="fragment_compass"
+        tools:layout="@layout/fragment_compass" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="ru.mirea.milonov.mireaproject.cameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/audiorecordFragment"
+        android:name="ru.mirea.milonov.mireaproject.audiorecordFragment"
+        android:label="fragment_audiorecord"
+        tools:layout="@layout/fragment_audiorecord" />
 </navigation>

@@ -15,4 +15,16 @@
         android:id="@+id/mediaPlayerFragment"
         android:title="Media player" />
 
+    <item
+        android:id="@+id/compassFragment"
+        android:title="Compass" />
+
+    <item
+        android:id="@+id/cameraFragment"
+        android:title="Camera" />
+
+    <item
+        android:id="@+id/audiorecordFragment"
+        android:title="Audio record" />
+
 </menu>

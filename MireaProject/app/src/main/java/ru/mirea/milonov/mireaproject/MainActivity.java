@@ -60,7 +60,11 @@ public class MainActivity extends AppCompatActivity {
 
         appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.dataFragment,
-                R.id.webViewFragment
+                R.id.webViewFragment,
+                R.id.mediaPlayerFragment,
+                R.id.compassFragment,
+                R.id.cameraFragment,
+                R.id.audiorecordFragment
         )
                 .setOpenableLayout(binding.drawerLayout)
                 .build();
